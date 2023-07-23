@@ -28,6 +28,10 @@ h1 {
 }
 
 #search{
-    width: 150px;
+    width: 200px;
+}
 
+img {
+    height: 300px;
+    width: 300px;
 }
