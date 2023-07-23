@@ -1,0 +1,33 @@
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.searchBtn {
+    background-color: darkgray;
+}
+
+.removeBtn {
+    background-color: rgb(203, 22, 22);
+}
+
+.searchBtn, .removeBtn, #search{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+#search{
+    width: 150px;
+
+}
