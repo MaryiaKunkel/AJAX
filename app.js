@@ -2,13 +2,13 @@ console.log("Let's get this party started!");
 let gifData = undefined;
 async function searchGifs(val) {
     const res = await axios.get(`http://api.giphy.com/v1/gifs/search?q=${val}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`);
-    // console.log(res);
+    console.log(res);
 
-    gifData = res.data.data.forEach(data => {
-        // console.log(data.url)
-    });
-    let url = res.data.data[0].url;
-    console.log(url)
+    // gifData = res.data.data.forEach(data => {
+    //     console.log(`data.url ${data.url}`)
+    // });
+    let url = res.data.data[0].images.original.url;
+    console.log(`url ${url}`)
 
     $('#giphy').append(`<img src="${url}">`)
 };
@@ -25,7 +25,9 @@ $('.removeBtn').on('click', function () {
 })
 
 
+// https://giphy.com/gifs/20thcenturyfox-night-at-the-museum-natm-movie-ylyUQlf4VUVF9odXKU/fullscreen
 
+// 
 
   
 // async function signUp(username, password, name) {
